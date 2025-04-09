@@ -480,6 +480,7 @@ class _DatePickerState extends State<_DatePickerComponent> {
       height: theme.titleHeight,
       decoration: BoxDecoration(
         color: theme.headerColor ?? theme.backgroundColor,
+        borderRadius: BorderRadius.circular(20),
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -507,7 +508,7 @@ class _DatePickerState extends State<_DatePickerComponent> {
               pressedOpacity: 0.3,
               padding: EdgeInsetsDirectional.only(end: 16, top: 0),
               child: Text(
-                'OK',
+                '$done',
                 style: theme.doneStyle,
               ),
               onPressed: () {
